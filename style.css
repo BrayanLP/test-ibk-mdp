@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Header */
+header{
+    background: #C4C4C4;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+    height: 80px;
+    margin: 0 auto;
+}
+/* Main */
+main{
+    width: 80%;
+    margin: 150px auto 3rem auto;
+}
+/* Button */
+button{
+    background: #C4C4C4;
+    color: black;
+    border: none;
+    height: 50px;
+    padding: 0 2rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.button-center{
+    margin: 2rem auto;
+    text-align: center;
+}
+
+/* Modal */
+.modal{
+    max-width: 512px;
+    width: 70%;
+    min-height: 500px;
+    height: 500px;
+    padding: 40px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+    background: white;
+    z-index: 2;
+    border-radius: 16px;
+    display: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.modal.show{
+    display: block;
+}
+.modal-body ul {
+    padding: 0;
+    margin: 0;
+}
+.modal-body ul li{
+    list-style: none;
+    width: 100%;
+}
+.modal-body ul li a{
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 8px 0;
+}
+.modal-header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.modal-close {
+    background: transparent;
+    text-align: right;
+}
+.modal-close img{
+    font-size: 18px;;
+}
+.modal-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.content-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+/* Scroll */
+.modal::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+  }
+  
+  .modal::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+  
+  .modal::-webkit-scrollbar-thumb {
+    background-color: #C4C4C4;    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+    border: 1px solid transparent;  /* creates padding around scroll thumb */
+  }
